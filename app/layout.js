@@ -4,10 +4,10 @@ import "./globals.css";
 const elite = Special_Elite({ subsets: ["latin"], variable: "--font-elite", weight: "400" });
 const lora = Lora({ subsets: ["latin"], variable: "--font-lora", style: ["normal", "italic"] });
 
-const __jsonld = {"@context":"https://schema.org","@type":"ProfilePage","mainEntity":{"@type":"Person","name":"Dara","jobTitle":"Penulis & Penyair","url":"https://linkinbio-arsip.vercel.app","inLanguage":"id"}};
+const __jsonld = {"@context":"https://schema.org","@type":"ProfilePage","mainEntity":{"@type":"Person","name":"Dara","jobTitle":"Penulis & Penyair","url":"https://arsip.pintuweb.com","inLanguage":"id"}};
 
 export const metadata = {
-  metadataBase: new URL("https://linkinbio-arsip.vercel.app"),
+  metadataBase: new URL("https://arsip.pintuweb.com"),
   title: "Arsip Kata — Surat dari Dara",
   description: "Link in bio penulis & penyair Dara: buku, newsletter, dan kelas menulis — tersimpan rapi dalam satu arsip.",
   applicationName: "Arsip Kata",
@@ -15,11 +15,11 @@ export const metadata = {
   authors: [{ name: "Arsip Kata" }],
   creator: "Arsip Kata",
   publisher: "Arsip Kata",
-  alternates: { canonical: "https://linkinbio-arsip.vercel.app" },
+  alternates: { canonical: "https://arsip.pintuweb.com" },
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://linkinbio-arsip.vercel.app",
+    url: "https://arsip.pintuweb.com",
     siteName: "Arsip Kata",
     title: "Arsip Kata — Surat dari Dara",
     description: "Link in bio penulis & penyair Dara: buku, newsletter, dan kelas menulis — tersimpan rapi dalam satu arsip.",
