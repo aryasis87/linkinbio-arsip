@@ -1,11 +1,11 @@
 import { ArrowUpRight } from 'lucide-react';
 
 const LAMPIRAN = [
-  { no: 'Lampiran 1', label: 'Buku Terbaru — "Rumah Kata"', meta: 'kumpulan puisi, cetakan ke-3' },
-  { no: 'Lampiran 2', label: 'Newsletter Mingguan', meta: 'surat pendek tiap Jumat pagi' },
-  { no: 'Lampiran 3', label: 'Kelas Menulis Daring', meta: 'batch baru dibuka September' },
-  { no: 'Lampiran 4', label: 'Tulisan di Medium', meta: 'esai & catatan perjalanan' },
-  { no: 'Lampiran 5', label: 'Surat untuk Dara', meta: 'dara@arsipkata.id' },
+  { no: 'Lampiran 1', label: 'Buku Terbaru — "Rumah Kata"', meta: 'kumpulan puisi, cetakan ke-3', url: 'https://www.gramedia.com' },
+  { no: 'Lampiran 2', label: 'Newsletter Mingguan', meta: 'surat pendek tiap Jumat pagi', url: 'https://substack.com' },
+  { no: 'Lampiran 3', label: 'Kelas Menulis Daring', meta: 'batch baru dibuka September', url: 'https://wa.me/6281339908765' },
+  { no: 'Lampiran 4', label: 'Tulisan di Medium', meta: 'esai & catatan perjalanan', url: 'https://medium.com' },
+  { no: 'Lampiran 5', label: 'Surat untuk Dara', meta: 'dara@arsipkata.id', url: 'mailto:dara@arsipkata.id' },
 ];
 
 export default function Home() {
@@ -37,7 +37,9 @@ export default function Home() {
           {LAMPIRAN.map((l, i) => (
             <a
               key={l.no}
-              href="#"
+              href={l.url}
+              target={l.url.startsWith('http') ? '_blank' : undefined}
+              rel={l.url.startsWith('http') ? 'noopener noreferrer' : undefined}
               className="rise group flex items-baseline gap-4 border-b border-dashed border-tinta/25 py-4 transition hover:bg-tinta/5"
               style={{ animationDelay: `${0.25 + i * 0.09}s` }}
             >
