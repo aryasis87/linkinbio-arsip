@@ -1,12 +1,12 @@
-# Arsip Kata — Surat dari Dara
+# Dara Puspita — Penulis & Penyair, Yogyakarta
 
-Link in bio penulis & penyair Dara: buku, newsletter, dan kelas menulis — tersimpan rapi dalam satu arsip.
+Tautan Dara Puspita, penulis dan penyair di Yogyakarta: kumpulan puisi "Rumah Kata" dengan satu puisi utuh, arsip Surat Jumat Pagi, kelas menulis November 2026, dan kotak surat.
 
 **Demo live:** https://linkinbio-arsip.vercel.app
 
 ![Tangkapan layar Arsip Kata](public/og.jpg)
 
-> Template link-in-bio dengan persona fiktif.
+> Template link-in-bio dengan persona fiktif. Akun, klien, harga, dan jadwal hanya contoh; tautan utama menuju halaman dalam yang benar-benar ada, dan formulir tidak mengirim data.
 
 ## Konsep
 
@@ -14,7 +14,9 @@ Persona Dara Puspita, penulis. Surat antik: kertas bergaris, perangko, animasi c
 
 ## Halaman
 
-`/`
+- `/` — surat bergaris dengan perangko dan cap pos, daftar Lampiran 1–5, tanda tangan
+- `/buku` — detail buku, daftar isi, satu puisi utuh orisinal, pesan buku bertanda tangan
+- `/surat` — arsip empat surat Jumat, kelas menulis enam pertemuan, kotak surat (langganan/kelas/balas)
 
 ## Teknologi
 

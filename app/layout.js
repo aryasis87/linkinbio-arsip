@@ -8,10 +8,10 @@ const __jsonld = {"@context":"https://schema.org","@type":"ProfilePage","mainEnt
 
 export const metadata = {
   metadataBase: new URL("https://linkinbio-arsip.vercel.app"),
-  title: "Arsip Kata — Surat dari Dara",
-  description: "Link in bio penulis & penyair Dara: buku, newsletter, dan kelas menulis — tersimpan rapi dalam satu arsip.",
+  title: { default: "Dara Puspita — Penulis & Penyair, Yogyakarta", template: "%s — Dara Puspita" },
+  description: "Tautan Dara Puspita, penulis dan penyair di Yogyakarta: kumpulan puisi \"Rumah Kata\" dengan satu puisi utuh, arsip Surat Jumat Pagi, kelas menulis November 2026, dan kotak surat.",
   applicationName: "Arsip Kata",
-  keywords: ["link in bio", "penulis", "penyair", "newsletter", "kelas menulis"],
+  keywords: ["penyair yogyakarta", "buku puisi", "newsletter menulis", "kelas menulis daring", "link in bio penulis"],
   authors: [{ name: "Arsip Kata" }],
   creator: "Arsip Kata",
   publisher: "Arsip Kata",
@@ -21,14 +21,14 @@ export const metadata = {
     locale: "id_ID",
     url: "https://linkinbio-arsip.vercel.app",
     siteName: "Arsip Kata",
-    title: "Arsip Kata — Surat dari Dara",
-    description: "Link in bio penulis & penyair Dara: buku, newsletter, dan kelas menulis — tersimpan rapi dalam satu arsip.",
-    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Arsip Kata — Surat dari Dara" }],
+    title: "Dara Puspita — Penulis & Penyair, Yogyakarta",
+    description: "Tautan Dara Puspita, penulis dan penyair di Yogyakarta: kumpulan puisi \"Rumah Kata\" dengan satu puisi utuh, arsip Surat Jumat Pagi, kelas menulis November 2026, dan kotak surat.",
+    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Dara Puspita — Penulis & Penyair, Yogyakarta" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Arsip Kata — Surat dari Dara",
-    description: "Link in bio penulis & penyair Dara: buku, newsletter, dan kelas menulis — tersimpan rapi dalam satu arsip.",
+    title: "Dara Puspita — Penulis & Penyair, Yogyakarta",
+    description: "Tautan Dara Puspita, penulis dan penyair di Yogyakarta: kumpulan puisi \"Rumah Kata\" dengan satu puisi utuh, arsip Surat Jumat Pagi, kelas menulis November 2026, dan kotak surat.",
     images: ["/og.jpg"],
   },
   robots: {
@@ -40,8 +40,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="id">
-      <body className={`${elite.variable} ${lora.variable} antialiased`}>{children}<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(__jsonld) }} />
+    <html lang="id" className={`${elite.variable} ${lora.variable}`}>
+      <body className="antialiased">{children}<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(__jsonld) }} />
         </body>
     </html>
   );
